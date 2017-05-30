@@ -88,10 +88,6 @@ def main(argv):
 	apInterfaces = address.Assign(apDevices)
 
 	device = apDevices.Get(ap.GetId())
-	print "	Address: {}".format(device.GetAddress())
-	print "	Broadcast: {}".format(device.GetBroadcast())
-	print "	Channel: {}".format(device.GetChannel())
-	print "	MTU: {}".format(device.GetMtu())
 
 	echoServer = ns.applications.UdpEchoServerHelper(9)
 
